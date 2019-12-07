@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Puppy Tracker</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="main_image_description">random pup</string>
+    <string name="track">Track</string>
+    <string name="daily_log">Daily log</string>
+</resources>
