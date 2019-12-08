@@ -16,18 +16,17 @@ class MainViewModel : ViewModel() {
     val url: LiveData<String>
         get() = _url
 
+    private val _log =  MutableLiveData<String>("")
+    val log: LiveData<String>
+        get() = _log
+
     init {
         loadRandomPup()
     }
 
     fun trackPup() {
-        Log.i(tag, "trackPup: display dialog to user")
-        displayDialog()
         loadRandomPup()
-    }
-
-    private fun displayDialog() {
-
+        updateLog()
     }
 
     private fun loadRandomPup() = viewModelScope.launch {
@@ -39,6 +38,10 @@ class MainViewModel : ViewModel() {
         _url.value = randomPup.imageUrl
 
         Log.i(tag, "loadRandomPup: ${_url.value}")
+    }
+
+    private fun updateLog() {
+        _log.value += "Took puppy for a walk\n"
     }
 
 }
