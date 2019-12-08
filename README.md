@@ -12,4 +12,4 @@ It makes use of the following libraries:
 
 ### App Screenshot
 
-[](images/sample_app_screenshot.png)
+![shows a puppy image with the log text](images/sample_app_screenshot.png)
